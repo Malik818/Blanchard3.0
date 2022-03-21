@@ -25,37 +25,38 @@ item.addEventListener("click", function() {
 document.querySelectorAll(".gallery__select-item").forEach(item => {
   item.addEventListener("click", function() {
     let btn = this;
-    
     document.querySelectorAll(".gallery__select-item").forEach(el => {
       if (el != btn) {
         el.classList.remove("none");
       }
     });
     
-
     btn.classList.add("none")
   })
   })
   
-  document.addEventListener("click", function(e) {
-    let target = e.target;
-    if (!target.closest(".header__list")) {
-      document.querySelectorAll(".header__container-dropdown").forEach(el => {
-          el.classList.remove("active-list--item");
-      })
-       document.querySelectorAll(".header__list-item-btn").forEach(el => {
-          el.classList.remove("header__active-btn");
-      });
-    }
-  })
 
-  let catalogs = document.querySelectorAll('.catalog__text-link')
-  catalogs.forEach(catalog => {
-    catalog.addEventListener('click', function(){
-      catalogs.forEach(ct => ct.classList.remove('catalog__text-active'));
-      this.classList.add('catalog__text-active');
+
+
+document.addEventListener("click", function(e) {
+  let target = e.target;
+  if (!target.closest(".header__list")) {
+    document.querySelectorAll(".header__container-dropdown").forEach(el => {
+        el.classList.remove("active-list--item");
     })
+      document.querySelectorAll(".header__list-item-btn").forEach(el => {
+        el.classList.remove("header__active-btn");
+    });
+  }
+})
+
+let catalogs = document.querySelectorAll('.catalog__text-link')
+catalogs.forEach(catalog => {
+  catalog.addEventListener('click', function(){
+    catalogs.forEach(ct => ct.classList.remove('catalog__text-active'));
+    this.classList.add('catalog__text-active');
   })
+})
   
   new SimpleBar(document.querySelector(".header__container-dropdown-list-one"), {
   /* с помощью этого значения вы можете управлять высотой ползунка*/
@@ -305,5 +306,10 @@ $(document).ready(function(){
 $(document).ready(function(){
   $('.gallery__popup-close,.gallery__popup-area').click(function(event){
       $('.gallery__popup').removeClass('open');
+  })
+})
+$(document).ready(function(){
+  $('.gallery__checkbox:checked').click(function(event){
+      $('.checkbox__text').toggleClass('m');
   })
 })

@@ -141,19 +141,27 @@
     </div>
 </div>
 </header>
-   <section class="hero">
-     <div class="hero__bg">
-       <div class="hero__slider" data-aos="zoom-out-up" >
-       <div class="hero__title">
-         <div class="container">
-           <h1 class="hero__heading">Прикоснитесь к&nbsp;прекрасному</h1>
-           <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-           <a href="#map" class="hero__button-link">Подписаться на рассылку</a>
-         </div>
-       </div>
+
+  <section class="hero">
+      <div class="swiper hero__swiper">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/Desktop1920/Hero_block/birmingham1.jpg" class="hero__img" alt="hero photo">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Desktop1920/Hero_block/birmingham2.jpg" class="hero__img" alt="hero photo">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/Desktop1920/Hero_block/birmingham3.jpg" class="hero__img" alt="hero photo">
+        </div>
       </div>
-      </div>
-   </section> 
+    </div>
+      <div class="container">
+        <h1 class="hero__heading">Прикоснитесь к&nbsp;прекрасному</h1>
+        <p class="hero__subtitle">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
+        <a href="#map" class="hero__button-link">Подписаться на рассылку</a>
+    </div>
+  </section>
 
    <section class="about" id="about">
        <div class="container">
@@ -170,30 +178,33 @@
                 <div class="gallery__filter">
                     <p class="gallery__text">Фильтр:</p>
                     <div class="gallery__block-select">
-                      <div class="gallery__select">
+                      <div class="gallery__select" >
                         <input class="gallery__select-input" type="hidden">
-                        <div class="gallery__select-head">Живопись</div>
+                        <button class="gallery__select-head">Живопись</button>
                           <ul class="gallery__select-list">
                               <li class="gallery__select-item none">Живопись</li>
                               <li class="gallery__select-item ">Рисунок</li>
                               <li class="gallery__select-item ">Скульптура</li>
                           </ul>
-                      </div>
+                        </div>
                     </div>
                 </div>
                 <div class="gallery__checkbox-block">
-                  <div class="gallery__checkbox checkbox-one">
-                  <input type="checkbox" id="Dinosaurs" name="animals" class="gallery__check">
-                  <label for="Dinosaurs" class="gallery__check-text ">XIX век</label>
-                  </div>
-                  <div class="gallery__checkbox checkbox-two">
-                  <input type="checkbox" id="Bears" name="animals" class="gallery__check">
-                  <label for="Bears" class="gallery__check-text">XX век</label>
-                  </div>
-                  <div class="gallery__checkbox checkbox-three">
-                  <input type="checkbox" id="Capreolus" name="animals" class="gallery__check">
-                  <label for="Capreolus" class="gallery__check-text">Современность</label>
-                </div>
+                  <label class="gallery__check gallery__option">
+                    <input type="checkbox" class="gallery__checkbox"> 
+                    <span class="check__box"></span>
+                    <p class="checkbox__text">XIX век</p>
+                  </label>
+                  <label class="gallery__check gallery__option">
+                    <input type="checkbox" class="gallery__checkbox"> 
+                    <span class="check__box"></span>
+                    <p class="checkbox__text">XX век</p>
+                  </label>
+                  <label class="gallery__check gallery__option">
+                    <input type="checkbox" class="gallery__checkbox"> 
+                    <span class="check__box"></span>
+                    <p class="checkbox__text">Современность</p>
+                  </label>
                 </div>
             </div>
             <div class="gallery__right">
@@ -206,9 +217,9 @@
                   <div class="swiper mySwipe gallery__swiper-content">
                       <div class="swiper-wrapper">
                           <div class="swiper-slide gallery__image">
-                            <div class="gallery__hidden" tabindex="0">
+                            <button class="gallery__hidden" >
                               <img src="./img/Desktop1920/Gallery_block/Rectangle124.png" alt="gallery photo">
-                            </div>
+                            </button >
                             <span class="gallery__active"></span>
                             <picture>
                               <source media="(max-width:320px)" srcset="./img/Mobile320/Gallery_block/Rectangle70.png" type="image/png" class="gallery__photo">
@@ -216,9 +227,9 @@
                             </picture>
                           </div>
                           <div class="swiper-slide gallery__image">
-                            <div class="gallery__hidden" tabindex="0">
+                            <button class="gallery__hidden">
                               <img src="./img/Desktop1920/Gallery_block/Rectangle124.png" alt="gallery photo">
-                            </div>
+                            </button>
                             <span class="gallery__active"></span>
                             <picture>
                               <source media="(max-width:320px)" srcset="./img/Mobile320/Gallery_block/Rectangle69.jpg" type="image/jpg" class="gallery__photo">
@@ -226,9 +237,9 @@
                             </picture>
                           </div>
                           <div class="swiper-slide gallery__image">
-                            <div class="gallery__hidden" tabindex="0">
+                            <button class="gallery__hidden">
                               <img src="./img/Desktop1920/Gallery_block/Rectangle124.png" alt="gallery photo">
-                            </div>
+                            </button>
                             <span class="gallery__active"></span>
                             <picture>
                               <source media="(max-width:320px)" srcset="./img/Mobile320/Gallery_block/Rectangle137.png" type="image/png" class="gallery__photo">
@@ -236,9 +247,9 @@
                             </picture>
                           </div>
                           <div class="swiper-slide gallery__image">
-                            <div class="gallery__hidden" tabindex="0">
+                            <button class="gallery__hidden">
                               <img src="./img/Desktop1920/Gallery_block/Rectangle124.png" alt="gallery photo">
-                            </div>
+                            </button>
                             <span class="gallery__active"></span>
                             <picture>
                               <source media="(max-width:320px)" srcset="./img/Mobile320/Gallery_block/Rectangle138.png" type="image/png" class="gallery__photo">
@@ -246,9 +257,9 @@
                             </picture>
                           </div>
                           <div class="swiper-slide gallery__image">
-                            <div class="gallery__hidden" tabindex="0">
+                            <button class="gallery__hidden">
                               <img src="./img/Desktop1920/Gallery_block/Rectangle124.png" alt="gallery photo">
-                            </div>
+                            </button>
                             <span class="gallery__active"></span>
                             <picture>
                               <source media="(max-width:320px)" srcset="./img/Mobile320/Gallery_block/Rectangle72.png" type="image/png" class="gallery__photo">
@@ -256,9 +267,9 @@
                             </picture>
                           </div>
                           <div class="swiper-slide gallery__image">
-                            <div class="gallery__hidden" tabindex="0">
+                            <button class="gallery__hidden">
                               <img src="./img/Desktop1920/Gallery_block/Rectangle124.png" alt="gallery photo">
-                            </div>
+                            </button>
                             <span class="gallery__active"></span>
                             <picture>
                               <source media="(max-width:320px)" srcset="./img/Mobile320/Gallery_block/Rectangle73.png" type="image/png" class="gallery__photo">
@@ -319,12 +330,12 @@
           </div>
           <div class="catalog__right">
             <div class="catalog__list" id="accordion">
-              <div class="catalog__item" tabindex="0">
+              <div class="catalog__item">
                   <p class="catalog__text">C 1400 по 1499 гг.</p>
                   <span class="catalog__button"></span>
               </div>
-              <div class="catalog__block" tabindex="0">
-                  <div class="catalog__block-link catalog__block-one" >
+              <ul class="catalog__block">
+                  <li class="catalog__block-link catalog__block-one" >
                     <a href="#" class="catalog__text-link" data-path="one">Бенедетто ди Биндо</a>
                     <a href="#" class="catalog__text-link" data-path="one">Бергоньоне, Амброджо</a>
                     <a href="#" class="catalog__text-link" data-path="one">Биссоло, Франческо</a>
@@ -334,8 +345,8 @@
                     <a href="#" class="catalog__text-link" data-path="one">Брамантино</a>
                     <a href="#" class="catalog__text-link" data-path="one">Бреа, Людовико</a>
                     <a href="#" class="catalog__text-link" data-path="one">Бьяджо д'Антонио Туччи</a>
-                  </div>
-                  <div class="catalog__block-link catalog__block-two" >
+                  </li>
+                  <li class="catalog__block-link catalog__block-two" >
                     <a href="#" class="catalog__text-link" data-path="one">Веккьетта</a>
                     <a href="#" class="catalog__text-link" data-path="one">Андреа Верроккьо</a>
                     <a href="#" class="catalog__text-link" data-path="two">Доменико Гирландайо</a>
@@ -345,16 +356,16 @@
                     <a href="#" class="catalog__text-link" data-path="one">Джованни да Удине</a>
                     <a href="#" class="catalog__text-link" data-path="one">Джованни ди Паоло</a>
                     <a href="#" class="catalog__text-link" data-path="one">Джорджоне</a>
-                  </div> 
-                  <div class="catalog__block-link catalog__block-link-three" >
+                  </li> 
+                  <li class="catalog__block-link catalog__block-link-three" >
                     <a href="#" class="catalog__text-link" data-path="one">Парентино, Бернардо</a>
                     <a href="#" class="catalog__text-link" data-path="one">Пезеллино</a>
                     <a href="#" class="catalog__text-link" data-path="one">Пьетро Перуджино</a>
                     <a href="#" class="catalog__text-link" data-path="one">Перуцци, Бальдассаре</a>
                     <a href="#" class="catalog__text-link" data-path="one">Пизанелло</a>
                     <a href="#" class="catalog__text-link" data-path="one">Пинтуриккьо</a>
-                  </div>
-                  <div class="catalog__block-adaptive catalog__block-one">
+                  </li>
+                  <li class="catalog__block-adaptive catalog__block-one">
                     <p class="catalog__text-link" data-path="one">Бенедетто ди Биндо</p>
                     <p class="catalog__text-link" data-path="one">Бергоньоне, Амброджо</p>
                     <p class="catalog__text-link" data-path="one">Биссоло, Франческо</p>
@@ -367,8 +378,8 @@
                     <p class="catalog__text-link" data-path="one">Веккьетта</p>
                     <p class="catalog__text-link" data-path="one">Андреа Верроккьо</p>
                     <p class="catalog__text-link" data-path="two">Доменико Гирландайо</p>
-                  </div>
-                  <div class="catalog__block-adaptive">
+                  </li>
+                  <li class="catalog__block-adaptive">
                     <p class="catalog__text-link" data-path="one">Беноццо Гоццоли</p>
                     <p class="catalog__text-link" data-path="one">Граначчи, Франческо</p>
                     <p class="catalog__text-link" data-path="one">Грегорио ди Чекко</p>
@@ -381,8 +392,8 @@
                     <p class="catalog__text-link" data-path="one">Перуцци, Бальдассаре</p>
                     <p class="catalog__text-link" data-path="one">Пизанелло</p>
                     <p class="catalog__text-link" data-path="one">Пинтуриккьо</p>
-                  </div>
-                  <div class="catalog__block-mobile">
+                  </li>
+                  <li class="catalog__block-mobile">
                     <a href="#default"><p class="catalog__text-link" data-path="one">Бенедетто ди Биндо</p></a>
                     <a href="#default"><p class="catalog__text-link" data-path="one">Бергоньоне, Амброджо</p></a>
                     <a href="#default"><p class="catalog__text-link" data-path="one">Биссоло, Франческо</p></a>
@@ -407,8 +418,8 @@
                     <a href="#default"><p class="catalog__text-link" data-path="one">Перуцци, Бальдассаре</p></a>
                     <a href="#default"><p class="catalog__text-link" data-path="one">Пизанелло</p></a>
                     <a href="#default"><p class="catalog__text-link" data-path="one">Пинтуриккьо</p></a>
-                  </div>
-              </div>
+                  </li>
+                </ul>
               <div class="catalog__item">
                   <p class="catalog__text">C 1500 по 1599 гг.</p>
                   <span class="catalog__button"></span>
@@ -523,7 +534,7 @@
       <div class="container">
         <h2 class="events__heading">События</h2>
         <div class="events__swiper">
-          <div class="events__button-prev"></div>
+          <button class="events__button-prev"></button>
             <div class="swiper events__swiper-block">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide events__block">
@@ -598,7 +609,7 @@
                     </div>
                 </div>
               </div>
-            <div class="events__button-next"></div>
+            <button class="events__button-next"></button>
               <div class="events__pagination"></div>
           </div>
         </div>
@@ -622,24 +633,42 @@
             <a href="blanchard-art.ru/projects" class="projects__link-one"> blanchard-art.ru</a>
             <a href="blanchard-art.ru/projects" class="projects__link-two"> blanchard-art.ru/projects/about</a>
           </p>
-          <div class="projects__block" tabindex="0">
+          <div class="projects__block" >
             <h5 class="projects__text">Партнёры проектов:</h5>
             <div class="projects__partners">
-              <div class="projects__button-prev"></div>
-              <div class="projects__button-next"></div>
-              <div class="swiper projects__swiper-block" >
-                <div class="swiper-wrapper projects__swiper-wrapper" tabindex="0">
-                    <div class="swiper-slide projects__img-one" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-two" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-three" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-four" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-five" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-six" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-seven" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-eight" tabindex="0"></div>
-                    <div class="swiper-slide projects__img-nine" tabindex="0"></div>
-                </div>
-              </div>
+              <button class="projects__button-prev"></button>
+              <button class="projects__button-next"></button>
+              <ul class="swiper projects__swiper-block" >
+                <li class="swiper-wrapper projects__swiper-wrapper">
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-one" src="./img/Desktop1920/Projects_block/1.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-two" src="./img/Desktop1920/Projects_block/2.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-three" src="./img/Desktop1920/Projects_block/3.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-four" src="./img/Desktop1920/Projects_block/4.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-five" src="./img/Desktop1920/Projects_block/5.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-six" src="./img/Desktop1920/Projects_block/6.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-seven" src="./img/Desktop1920/Projects_block/7.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-eight" src="./img/Desktop1920/Projects_block/8.png" alt="projects photo">
+                    </a>
+                    <a href="#" class="swiper-slide projects__link-img">
+                      <img class="projects__img projects__img-nine" src="./img/Desktop1920/Projects_block/9.png" alt="projects photo">
+                    </a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -692,9 +721,9 @@
       </div>
     </section>
 
-    <div class="map">
-      <div id="map" class="map_block"></div>
-    </div>
+    <section class="map">
+      <div class="map" id="map"></div>
+    </section>
 
     <div class="footer">
       <div class="footer__content">
@@ -746,6 +775,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/heroswiper.js"></script>
     <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   </body>
